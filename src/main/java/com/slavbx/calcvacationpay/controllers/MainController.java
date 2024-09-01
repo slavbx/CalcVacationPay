@@ -21,7 +21,7 @@ public class MainController {
         this.vacationPayService = vacationPayService;
     }
 
-    @GetMapping("/calc-vacation-pay") //http://localhost:8080/api/calc-vacation-pay?salary=29300&days=10
+    @GetMapping("/calculate") //http://localhost:8080/api/calculate?salary=29300&days=10
     public ResponseEntity<?> calcVacationPay(@RequestParam(name = "salary") String salary,
                                              @RequestParam(name = "days") String days) {
         if(salary == null || salary.equals("") || days == null || days.equals("")) {
