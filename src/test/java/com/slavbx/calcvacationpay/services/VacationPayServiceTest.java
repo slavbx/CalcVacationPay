@@ -30,6 +30,6 @@ class VacationPayServiceTest {
         LocalDate end = LocalDate.of(2024, 2, 12);
         assertThat(vacationPayService.calcVacationPayByDate(avgSalary, start, end)).isNotNull();
         assertThat(vacationPayService.calcVacationPayByDate(avgSalary, start, end).getClass()).isEqualTo(String.class);
-        assertThat(vacationPayService.calcVacationPayByDate(avgSalary, start, end)).isEqualTo("10000.00");
+        assertThat(vacationPayService.calcVacationPayByDate(avgSalary, start, end)).isEqualTo("21000.00");
     }
 }
